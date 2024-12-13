@@ -1,87 +1,124 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from '@vuepress/bundler-vite'
-import { webpackBundler } from '@vuepress/bundler-webpack'
+// import { webpackBundler } from '@vuepress/bundler-webpack'
+// 水印插件
+import { watermarkPlugin } from '@vuepress/plugin-watermark'
+// 看板娘插件
+// import { oml2dPlugin } from 'vuepress-plugin-oh-my-live2d';
 
 export default defineUserConfig({
   base: "/blog/",
-  title: "lxang723's blog",
+  title: "柒月廿三",
+  head: [['link', { rel: 'icon', href: '/head-square.png' }]],
   description: "Just playing around",
   bundler: viteBundler(),
+  host: "127.0.0.1",
+  port: 18080,
+  // open: true,
+  plugins: [
+    // 水印
+    watermarkPlugin({
+      // options
+      enabled: false
+    }),
+    // 看板娘
+    // oml2dPlugin({
+    //   // 在这里配置选项
+    //   models: [
+    //     {
+    //       "path": "https://model.oml2d.com/cat-black/model.json",
+    //       "scale": 0.15,
+    //       "position": [0, 20],
+    //       "stageStyle": {
+    //         "height": 350
+    //       }
+    //     }
+    //   ]
+    // })
+  ],
   // bundler: webpackBundler(),
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
-    logo: "/logo.png",
-    author: "reco_luan",
-    authorAvatar: "/head.png",
-    docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
-    docsBranch: "main",
-    docsDir: "example",
+    // primaryColor: '#3aa675', // 自定义主题的基础色
+    logo: "/head-square.png",
+    author: "LXang723",
+    authorAvatar: "/head-square.png",
+    // https://theme-reco.vuejs.press/docs/theme/git.html
+    docsRepo: "https://github.com/LXang723/blog", // 文档源文件的仓库 URL
+    docsBranch: "main", // 文档源文件的仓库分支。它将会用于生成 编辑此页 的链接。
+    docsDir: "", // 文档项目存放在工程的子目录。
     lastUpdatedText: "",
-    // series 为原 sidebar
+    // 自动设置系列（未生效）
+    autoSetSeries: true,
+    // https://theme-reco.vuejs.press/docs/theme/series.html
     series: {
-      "/docs/theme-reco/": [
+      "/blogs/middleware/": [
         {
-          text: "module one",
-          children: ["home", "theme"],
+          text: "RabbitMQ",
+          children: ["rabbitmq/rabbitmq"],
         },
         {
-          text: "module two",
-          children: ["api", "plugin"],
+          text: "Redis",
+          children: ["redis/redis"],
         },
       ],
     },
+     // 自动设置分类（注意文件夹结构，只能使用一层文件夹）
+    // autoSetBlogCategories: true,
+    // autoAddCategoryToNavbar API 后期会做调整，但不会废弃，请谨慎使用。
+    // 自动将分类和标签添加至头部导航条
+    // autoAddCategoryToNavbar: {
+    //   location: 1, // 插入位置，默认 0
+    //   showIcon: true, // 展示图标，默认 false
+    // },
+    // 当 autoAddCategoryToNavbar 为 true 时，则全部取默认值
+    // autoAddCategoryToNavbar: true,
+    // 图标 https://www.xicons.org/#/zh-CN
+    // 导航栏
     navbar: [
-      { text: "Home", link: "/" },
-      { text: "Categories", link: "/categories/reco/1.html" },
-      { text: "Tags", link: "/tags/tag1/1.html" },
+      { text: "Home", link: "/", icon: 'IconHome' },
+      // categories 和 tags 的路径需要根据 build 后的文件确定，设定一个不会变的
+      { text: "Categories", link: "/categories/Blog/1.html", icon: 'IconCategory' },
+      { text: "Tags", link: "/tags/Blog/1.html", icon: 'IconTag' },
+      // Timeline 和 Blogs 是
+      { text: "Timeline", link: "/timeline.html", icon: 'IconTimeline' },
+      { text: "Blogs", link: "/posts.html", icon: 'IconBlog' },
       {
-        text: "Docs",
+        text: "Middleware",
+        icon: 'IconMiddle',
         children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
+          { text: "RabbitMQ", link: "/blogs/middleware/rabbitmq/rabbitmq", icon: 'IconRabbitMQ' },
+          // { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+          { text: "Elasticsearch", link: "/blogs/middleware/elasticsearch/elastic", icon: 'IconEs' }
+        ]
       },
     ],
+    // 公告
+    // https://theme-reco.vuejs.press/docs/theme/bulletin-popover.html
     bulletin: {
+      title: '交个朋友',
       body: [
         {
           type: "text",
-          content: `🎉🎉🎉 reco 主题 2.x 已经接近 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了，并且希望大家在 QQ 群和 GitHub 踊跃反馈使用体验，我会在第一时间响应。`,
-          style: "font-size: 12px;",
+          content: `我的笔记。`,
+          style: "font-size: 14px;",
         },
         {
           type: "hr",
         },
         {
           type: "title",
-          content: "QQ 群",
+          content: "我的仓库",
         },
         {
           type: "text",
           content: `
           <ul>
-            <li>QQ群1：1037296104</li>
-            <li>QQ群2：1061561395</li>
-            <li>QQ群3：962687802</li>
+            <li><a href="https://www.cnblogs.com/july23">博客园<a/></li>
+            <li><a href="https://blog.csdn.net/LXang723">CSDN<a/></li>
           </ul>`,
-          style: "font-size: 12px;",
-        },
-        {
-          type: "hr",
-        },
-        {
-          type: "title",
-          content: "GitHub",
-        },
-        {
-          type: "text",
-          content: `
-          <ul>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/issues">Issues<a/></li>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/discussions/1">Discussions<a/></li>
-          </ul>`,
-          style: "font-size: 12px;",
+          style: "font-size: 14px;",
         },
         {
           type: "hr",

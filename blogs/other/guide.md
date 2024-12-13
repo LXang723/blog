@@ -1,13 +1,20 @@
 ---
-title: vuepress-theme-reco
-date: 2019/04/09
+sticky: 1
+title: 使用 GitHub 搭建一个属于你自己的博客
+date: 2024/08/12
 categories:
- - reco
+ - Blog
+tags:
+ - Blog
 ---
 
 ![vuepress](https://img.shields.io/badge/vuepress-0.14.8-brightgreen.svg)
+
 ![leancloud-storage](https://img.shields.io/badge/leancloud--storage-3.10.1-orange.svg)
+
 ![valine](https://img.shields.io/badge/valine-1.3.4-blue.svg)
+
+![xxx](https://img.shields.io/badge/xxx-1.3.6-blue.svg)
 
 ::: tip 介绍
 1. 这是一个vuepress主题，旨在添加博客所需的分类、TAB墙、分页、评论等能；<br>
