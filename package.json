@@ -19,6 +19,6 @@
     "vuepress-theme-reco": "2.0.0-rc.23"
   },
   "devDependencies": {
-    "@vuepress/plugin-watermark": "^2.0.0-rc.61"
+    "vuepress-plugin-medium-zoom": "^1.1.9"
   }
 }

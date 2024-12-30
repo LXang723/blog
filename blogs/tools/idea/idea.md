@@ -1,10 +1,10 @@
 ---
 title: IDEA 快捷键
-date: 2016/12/15
+date: 2016-12-15
 tags:
  - IDEA
 categories:
- - 开发工具
+ - Tools
 ---
 
 ```html

@@ -1,7 +1,53 @@
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+/* 霞鹜文楷 字体 */
+@font-face {
+    font-family: 'LXGWWenKai';
+    src: url('/fonts/LXGWWenKai/LXGWWenKaiGBScreen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 思源宋体 字体 */
+@font-face {
+    font-family: 'SourceHanSerifCN';
+    src: url('/fonts/SourceHanSerifCN/SourceHanSerifCN-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 阿里妈妈东方大楷 诗*/
+@font-face {
+    font-family: 'AlimamaDongFangDaKai';
+    src: url('/fonts/AlimamaDongFangDaKai/AlimamaDongFangDaKai-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', 'Verdana' 西文字体 */
+/* 'SourceHanSerifCN', 'LXGWWenKai', 'AlimamaDongFangDaKai' */
+body {
+    font-family: 'Lucida Sans Regular', 'LXGWWenKai', sans-serif !important;
+    font-size: 18px !important;
+}
+
+.font-lxgwwenkai {
+    font-family: 'Lucida Sans Regular', 'LXGWWenKai', sans-serif !important;
+}
+
+.font-dongfangdakai {
+    font-family: 'AlimamaDongFangDaKai', sans-serif !important;
+}
+
+/* 公告 */
 .bulletin-wrapper .bulletin-content {
     overflow-y: auto;
+}
+
+/* details 容器 内的代码移除边框 */
+.custom-container.details {
+    .language-java {
+        border: none;
+    }
+}
+
+.post-item-container .title {
+    font-size: 1.250rem !important;
+    font-weight: 700 !important;
 }
