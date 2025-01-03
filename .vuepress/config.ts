@@ -12,7 +12,7 @@ import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 
 export default defineUserConfig({
-  base: "/", // /blog/
+  base: "/blog/",
   title: "柒月廿三",
   head: [['link', { rel: 'icon', href: '/images/head/square.png' }]],
   description: "Just playing around",
