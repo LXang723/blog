@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app-C6t4MB_T.js";const o={};function n(r,c){return a(),t("div")}const l=e(o,[["render",n],["__file","1.html.vue"]]),_=JSON.parse('{"path":"/tags/shenghuozizhu/1.html","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{l as comp,_ as data};
