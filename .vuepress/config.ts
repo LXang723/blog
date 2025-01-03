@@ -188,10 +188,10 @@ export default defineUserConfig({
       },
     ],
     // socialLinks 和 docsRepo 同时配置，切换导航时会重复生成 IconGithub
-    // socialLinks: [
-    //   { icon: 'IconTag', link: 'https://twitter.com/yourname' },
-    //   { icon: 'IconHome', link: 'https://linkedin.com/in/yourname' },
-    // ],
+    socialLinks: [
+      { icon: 'IconTag', link: 'https://twitter.com/yourname' },
+      { icon: 'IconHome', link: 'https://linkedin.com/in/yourname' },
+    ],
     // 公告
     // https://theme-reco.vuejs.press/docs/theme/bulletin-popover.html
     bulletin: {
