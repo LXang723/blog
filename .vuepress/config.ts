@@ -81,12 +81,11 @@ export default defineUserConfig({
         backToHome: '返回首页'
       }
     },
-    colorMode: 'dark',
+    colorMode: 'light',
     logo: "/images/head/square.png",
     author: "LXang723",
     authorAvatar: "/images/head/square.png",
     // https://theme-reco.vuejs.press/docs/theme/git.html
-    // repo: "https://github.com/LXang723/blog",
     // docsRepo 配置完，会在导航栏自动生成 GitHub 图标，而且会影响 编辑当前页面
     docsRepo: "https://github.com/LXang723/blog", // 文档源文件的仓库 URL
     docsBranch: "main", // 文档源文件的仓库分支。它将会用于生成 编辑此页 的链接。
