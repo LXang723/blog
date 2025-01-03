@@ -20,9 +20,9 @@ bannerBrand:
   buttons:
     - { text: Guide, link: './blogs/other/freewriting' }
     - { text: Github, link: 'https://github.com/LXang723', type: 'plain' }
-blog:
-  socialLinks:
-    - { icon: IconSun, link: 'http://www.baidu.com' }
+# blog:
+#   socialLinks:
+#     - { icon: IconSun, link: 'http://www.baidu.com' }
 features:
   - title: 立
     details: 昨夜西风凋碧树。独上高楼，望尽天涯路。  —— 北宋晏殊《蝶恋花·槛菊愁烟兰泣露》
