@@ -1,29 +1,28 @@
 ---
 # 下面网址找首页设置
-# https://yiov.github.io/guide/frontmatter.html
+# https://ecosystem.vuejs.press/zh/themes/default/frontmatter.html#home
 home: true
 modules:
   # - Banner
-  # - BannerBrand
+  - BannerBrand
   - Blog
   - Features
   - MdContent
   - Footer
-banner:
-  bgImage: '/bg1.jpg'
+# banner:
+#   bgImage: '/bg.svg'
 bannerBrand:
   bgImage: '/bg.svg'
   lang: zh-CN
-  title: 柒月廿三
-  description: 去发光，而不是被照亮。
+  title: 柒月廿三，浅笔流年
+  description: LXang723's Blog
   tagline: 你好，我是 LXang723，一名 Java 开发工程师，也是技术爱好者。在这片博客天地中，我将与大家分享我对技术、编程语言的学习经验，也会探讨一些职业发展的个人心得。除此之外，我也会分享一些日常生活中的小故事，包括旅行见闻、书单推荐以及如何保持高效的工作和学习方式。技术改变工作，成长塑造生活。
   buttons:
-    - { text: Guide, link: './blogs/other/guide' }
+    - { text: Guide, link: './blogs/other/freewriting' }
     - { text: Github, link: 'https://github.com/LXang723', type: 'plain' }
-blog:
-  socialLinks:
-    - { icon: 'LogoGithub', link: 'https://github.com/LXang723' }
-    - { icon: 'IconWeChat', link: 'https://github.com/LXang1723'}
+# blog:
+#   socialLinks:
+#     - { icon: IconSun, link: 'http://www.baidu.com' }
 features:
   - title: 立
     details: 昨夜西风凋碧树。独上高楼，望尽天涯路。  —— 北宋晏殊《蝶恋花·槛菊愁烟兰泣露》

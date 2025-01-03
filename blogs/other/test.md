@@ -1,16 +1,18 @@
 ---
-sticky: 2
-title: 博客功能使用记录
+title: 博客功能使用记录（复制粘贴用）
 # 设置单个密码 123456
 # password: 14e1b600b1fd579f47433b88e8d85291
 date: 2024-09-09
-tags:
- - Blog
 categories:
- - Blog
+ - 其他
+tags:
+ - 博客
 ---
 
 对博客中使用的功能做一个简单的记录。
+
+❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿   
+① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳ 
 
 [[toc]]
 
@@ -28,5 +30,9 @@ categories:
 ## Vue 组件预览
 @[preview](@/.vuepress/components/IconHome.vue)
 
-## 解析文件为代码组
+## 解析 Vue 文件为代码组
 @[code-group](@/.vuepress/components/IconHome.vue)
+
+- VuePress - <Badge type="tip" text="v2" vertical="top" />
+- VuePress - <Badge type="warning" text="v2" vertical="middle" />
+- VuePress - <Badge type="danger" text="v2" vertical="bottom" />

@@ -1,5 +1,5 @@
 <template>
-    <img :src="src" :alt="alt" :width="width" />
+    <img :src="src" :alt="alt" :width="width" :class="{ 'has-border': showBorder }" />
 </template>
 
 <script>
@@ -17,11 +17,15 @@ export default {
             type: [String, Number],
             default: '300',
         },
-    },
+        showBorder: {
+            type: Boolean,
+            default: false,
+        },
+    }
 };
 </script>
 <style scoped>
-img {
-    border: 1px solid #444;
+.has-border {
+    border: 1px solid #334155;
 }
 </style>

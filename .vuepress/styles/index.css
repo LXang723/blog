@@ -1,34 +1,27 @@
-/* 霞鹜文楷 字体 */
+/* 霞鹜文楷 + Ysabeau Office 字体 */
 @font-face {
-    font-family: 'LXGWWenKai';
-    src: url('/fonts/LXGWWenKai/LXGWWenKaiGBScreen.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'LXGWBrightGB';
+    src: url('/fonts/LXGWBrightGB-Medium.woff2') format('woff2');
+    font-weight: 500;
     font-style: normal;
 }
-/* 思源宋体 字体 */
-@font-face {
-    font-family: 'SourceHanSerifCN';
-    src: url('/fonts/SourceHanSerifCN/SourceHanSerifCN-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-/* 阿里妈妈东方大楷 诗*/
+
+/* 阿里妈妈东方大楷 */
 @font-face {
     font-family: 'AlimamaDongFangDaKai';
-    src: url('/fonts/AlimamaDongFangDaKai/AlimamaDongFangDaKai-Regular.woff2') format('woff2');
+    src: url('/fonts/AlimamaDongFangDaKai-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-/* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', 'Verdana' 西文字体 */
-/* 'SourceHanSerifCN', 'LXGWWenKai', 'AlimamaDongFangDaKai' */
+/* TODO: 默认字体：浏览器加载字体完成之前 */
 body {
-    font-family: 'Lucida Sans Regular', 'LXGWWenKai', sans-serif !important;
+    font-family: 'LXGWBrightGB', sans-serif !important;
     font-size: 18px !important;
 }
 
-.font-lxgwwenkai {
-    font-family: 'Lucida Sans Regular', 'LXGWWenKai', sans-serif !important;
+.font-lxgwbright {
+    font-family: 'LXGWBrightGB', sans-serif !important;
 }
 
 .font-dongfangdakai {
@@ -47,7 +40,28 @@ body {
     }
 }
 
+/* 博客卡片标题 */
 .post-item-container .title {
     font-size: 1.250rem !important;
-    font-weight: 700 !important;
+}
+
+/* 首页分类与标签 */
+.home-blog-content .info-wrapper {
+    .category-wrapper .category-item .category-link .text {
+        font-size: 1rem !important;
+    }
+    .tag-wrapper .tag-item .tag-link {
+        font-size: 1rem !important;
+    }
+}
+
+/* 带图标的内容 */
+.xicon-content {
+    font-size: 1rem !important;
+}
+
+/* 页面导航 */
+.page-catalog-container {
+    overflow-y: auto;
+    scrollbar-width: none;
 }
