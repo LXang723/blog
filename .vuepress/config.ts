@@ -12,7 +12,7 @@ import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 
 export default defineUserConfig({
-  base: "/", // /blog/
+  base: "/blog/",
   title: "柒月廿三",
   head: [['link', { rel: 'icon', href: '/images/head/square.png' }]],
   description: "Just playing around",
@@ -86,11 +86,11 @@ export default defineUserConfig({
     author: "LXang723",
     authorAvatar: "/images/head/square.png",
     // https://theme-reco.vuejs.press/docs/theme/git.html
-    repo: "https://github.com/LXang723/blog",
+    // repo: "https://github.com/LXang723/blog",
     // docsRepo 配置完，会在导航栏自动生成 GitHub 图标，而且会影响 编辑当前页面
     docsRepo: "https://github.com/LXang723/blog", // 文档源文件的仓库 URL
     docsBranch: "main", // 文档源文件的仓库分支。它将会用于生成 编辑此页 的链接。
-    docsDir: "/", // 文档项目存放在工程的子目录。
+    docsDir: "", // 文档项目存放在工程的子目录。
     lastUpdatedText: "最后更新时间",
     friendshipLinks: [
       {
@@ -189,10 +189,10 @@ export default defineUserConfig({
       },
     ],
     // socialLinks 和 docsRepo 同时配置，切换导航时会重复生成 IconGithub
-    socialLinks: [
-      { icon: 'IconTag', link: 'https://twitter.com/yourname' },
-      { icon: 'IconHome', link: 'https://linkedin.com/in/yourname' },
-    ],
+    // socialLinks: [
+    //   { icon: 'IconTag', link: 'https://twitter.com/yourname' },
+    //   { icon: 'IconHome', link: 'https://linkedin.com/in/yourname' },
+    // ],
     // 公告
     // https://theme-reco.vuejs.press/docs/theme/bulletin-popover.html
     bulletin: {
